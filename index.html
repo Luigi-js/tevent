@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tevent</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700,900|Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+  <section class="colored-section" id="title">
+    <div class="container-fluid">
+
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg">
+
+        <a class="navbar-brand" href="">tevent</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Our Philosophy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+      <!-- Title -->
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="big-heading">Discover other cultures with live art and music events.</h1>
+        </div>
+        <div class="col-lg-6">
+          <img class="title-image" src="images/piano.jpg" alt="iphone-mockup">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Features -->
+
+  <section class="white-section" id="features">
+
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <i class="fas fa-map-marker-alt features-icon fa-4x"></i>
+          <h3 class="feature-title">Geolocalization</h3>
+          <p>Find events organized by local artists close to your position.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="fas fa-credit-card features-icon fa-4x"></i>
+          <h3 class="feature-title">Pay Online</h3>
+          <p>Pay through our safe payment methods.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="fas fa-music features-icon fa-4x"></i>
+          <h3 class="feature-title">Live Music</h3>
+          <p>Go to artist's home and relax listening live music when you travel everywhere in the world.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section class="colored-section" id="testimonials">
+
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active container-fluid">
+          <h2 class="testimonial-text">I had an amazing experience  when I travelled to Dublin. I have found a Violinist that played Irish music.</h2>
+          <div class="imageReview" style="background-image:url('images/testimonial1.jpg');"></div>
+          <em>Jack, Washington DC</em>
+        </div>
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">When I stayed in Rome - Italy for 1 week I booked an event at Marco's house. Now I have a passion for italian songs.</h2>
+          <div class="imageReview" style="background-image:url('images/testimonial2.jpg');"></div>
+          <em>Angela, London</em>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+  </section>
+
+
+  <!-- Press -->
+
+  <section class="colored-section" id="press">
+    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section class="white-section" id="discoverCity">
+
+    <h2 class="section-heading">Try how it works Tevent</h2>
+    <p>Type a city in this form and find local artists.</p>
+
+    <form>
+      <div class="form-group" id="search-city">
+        <label for="inputCity"></label>
+        <input type="text" class="form-control form-control-lg" id="inputCity" aria-describedby="enterCityInput" placeholder="e.g. London, Madrid, Rome...">
+      </div>
+    </form>
+
+    <div class="container-fluid">
+
+      <div class="row cardPlusMap" id="hiddenContainer">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" id="cardsContainer">
+          <div class="card-deck" id="groupCards">
+
+
+
+
+
+          </div>
+
+
+        </div>
+
+
+        <div id="divOfMap" class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <div id="map"></div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section class="colored-section" id="cta">
+
+    <div class="container-fluid">
+
+      <h3 class="big-heading">Don't be a normal tourist when you go abroad, be a guest.</h3>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer class="white-section" id="footer">
+
+    <div class="container-fluid">
+
+      <i class="social-icon fab fa-twitter"></i>
+      <i class="social-icon fab fa-facebook-f"></i>
+      <i class="social-icon fab fa-instagram"></i>
+      <i class="social-icon fas fa-envelope"></i>
+
+      <p>© Copyright 2019 Tevent</p>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script type='text/javascript' src='config.js'></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=" + mykey + "&callback=initMap"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
