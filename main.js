@@ -15,22 +15,6 @@ var CITIES = {
   }
 };
 
-/*
-// Add marker
-var marker = new google.maps.Marker({
-  position:{lat:51.5667,lng:-0.0333},
-  map:map
-});
-
-var infoWindow = new google.maps.InfoWindow({
-  content:'<h1>Wanstead Barrio</h1>'
-});
-
-marker.addListener('click', function(){
-  infoWindow.open(map, marker);
-});
-*/
-
 //Array of markers
 var markers = [{
     coords: {
@@ -206,7 +190,6 @@ function initMap() {
       call(cityArtist);
       $('#hiddenContainer').removeClass('cardPlusMap').addClass('cardPlusMap2');
     }
-
   });
 }
 
@@ -230,7 +213,3 @@ function call(search) {
       $('#groupCards').prepend().html(userArtist);
   });
 }
-
-/*$('#inputCity').on('keyup', function(e) {
-  var cityArtist = e.target.value.toLowerCase();
-});*/
